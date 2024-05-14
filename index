@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Drink Order</h1>
+        <form id="drink-form">
+            <div class="drink"><label for="pils">Pils</label><input type="number" id="pils" name="pils" min="0" value="0"><button type="button" onclick="decrement('pils')">-</button><button type="button" onclick="increment('pils')">+</button></div>
+            <div class="drink"><label for="kriek">Kriek</label><input type="number" id="kriek" name="kriek" min="0" value="0"><button type="button" onclick="decrement('kriek')">-</button><button type="button" onclick="increment('kriek')">+</button></div>
+            <div class="drink"><label for="non-alcoholic-beer">Non-alcoholic Beer</label><input type="number" id="non-alcoholic-beer" name="non-alcoholic-beer" min="0" value="0"><button type="button" onclick="decrement('non-alcoholic-beer')">-</button><button type="button" onclick="increment('non-alcoholic-beer')">+</button></div>
+            <div class="drink"><label for="cola">Cola</label><input type="number" id="cola" name="cola" min="0" value="0"><button type="button" onclick="decrement('cola')">-</button><button type="button" onclick="increment('cola')">+</button></div>
+            <div class="drink"><label for="cola-zero">Cola Zero</label><input type="number" id="cola-zero" name="cola-zero" min="0" value="0"><button type="button" onclick="decrement('cola-zero')">-</button><button type="button" onclick="increment('cola-zero')">+</button></div>
+            <div class="drink"><label for="fanta">Fanta</label><input type="number" id="fanta" name="fanta" min="0" value="0"><button type="button" onclick="decrement('fanta')">-</button><button type="button" onclick="increment('fanta')">+</button></div>
+            <div class="drink"><label for="sprite">Sprite</label><input type="number" id="sprite" name="sprite" min="0" value="0"><button type="button" onclick="decrement('sprite')">-</button><button type="button" onclick="increment('sprite')">+</button></div>
+            <div class="drink"><label for="ice-tea">Ice Tea</label><input type="number" id="ice-tea" name="ice-tea" min="0" value="0"><button type="button" onclick="decrement('ice-tea')">-</button><button type="button" onclick="increment('ice-tea')">+</button></div>
+            <div class="drink"><label for="aa-drink">AA Drink</label><input type="number" id="aa-drink" name="aa-drink" min="0" value="0"><button type="button" onclick="decrement('aa-drink')">-</button><button type="button" onclick="increment('aa-drink')">+</button></div>
+            <div class="drink"><label for="bruiswater">Bruiswater</label><input type="number" id="bruiswater" name="bruiswater" min="0" value="0"><button type="button" onclick="decrement('bruiswater')">-</button><button type="button" onclick="increment('bruiswater')">+</button></div>
+            <div class="drink"><label for="plat-water">Plat Water</label><input type="number" id="plat-water" name="plat-water" min="0" value="0"><button type="button" onclick="decrement('plat-water')">-</button><button type="button" onclick="increment('plat-water')">+</button></div>
+            <div class="drink"><label for="koffie">Koffie</label><input type="number" id="koffie" name="koffie" min="0" value="0"><button type="button" onclick="decrement('koffie')">-</button><button type="button" onclick="increment('koffie')">+</button></div>
+            <div class="drink"><label for="deca">Deca</label><input type="number" id="deca" name="deca" min="0" value="0"><button type="button" onclick="decrement('deca')">-</button><button type="button" onclick="increment('deca')">+</button></div>
+            <div class="drink"><label for="thee-citroen">Thee (citroen)</label><input type="number" id="thee-citroen" name="thee-citroen" min="0" value="0"><button type="button" onclick="decrement('thee-citroen')">-</button><button type="button" onclick="increment('thee-citroen')">+</button></div>
+            <div class="drink"><label for="thee-rozenbottel">Thee (rozenbottel)</label><input type="number" id="thee-rozenbottel" name="thee-rozenbottel" min="0" value="0"><button type="button" onclick="decrement('thee-rozenbottel')">-</button><button type="button" onclick="increment('thee-rozenbottel')">+</button></div>
+            <div class="drink"><label for="oxo">Oxo</label><input type="number" id="oxo" name="oxo" min="0" value="0"><button type="button" onclick="decrement('oxo')">-</button><button type="button" onclick="increment('oxo')">+</button></div>
+            <div class="drink"><label for="soep-tomaat">Soep (tomaat)</label><input type="number" id="soep-tomaat" name="soep-tomaat" min="0" value="0"><button type="button" onclick="decrement('soep-tomaat')">-</button><button type="button" onclick="increment('soep-tomaat')">+</button></div>
+            <div class="drink"><label for="soep-kip">Soep (kip)</label><input type="number" id="soep-kip" name="soep-kip" min="0" value="0"><button type="button" onclick="decrement('soep-kip')">-</button><button type="button" onclick="increment('soep-kip')">+</button></div>
+            <div class="drink"><label for="soep-curry">Soep (curry)</label><input type="number" id="soep-curry" name="soep-curry" min="0" value="0"><button type="button" onclick="decrement('soep-curry')">-</button><button type="button" onclick="increment('soep-curry')">+</button></div>
+            <div class="drink"><label for="soep-groenten">Soep (groenten)</label><input type="number" id="soep-groenten" name="soep-groenten" min="0" value="0"><button type="button" onclick="decrement('soep-groenten')">-</button><button type="button" onclick="increment('soep-groenten')">+</button></div>
+            <div class="drink"><label for="soep-vers">Soep (vers)</label><input type="number" id="soep-vers" name="soep-vers" min="0" value="0"><button type="button" onclick="decrement('soep-vers')">-</button><button type="button" onclick="increment('soep-vers')">+</button></div>
+            <button type="button" onclick="submitOrder()">Submit Order</button>
+        </form>
+        <div id="order-summary"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
